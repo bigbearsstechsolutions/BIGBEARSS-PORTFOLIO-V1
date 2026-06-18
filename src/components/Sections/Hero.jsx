@@ -4,7 +4,7 @@ import { SiReact, SiTailwindcss, SiNextdotjs, SiNodedotjs, SiMongodb } from 'rea
 import { PERSONAL_INFO, STATS } from '../../utilis/constants'
 import { scrollToSection } from '../../hooks/useSrollspy'
 import Fadein from '../animations/Fadedin'
-import img from '../../../public/IMAGE/videos.mp4'
+const img = 'public/IMAGE/videos.mp4'
 import RadialBg from '../background/RadialBg'
 
 const Hero = () => {

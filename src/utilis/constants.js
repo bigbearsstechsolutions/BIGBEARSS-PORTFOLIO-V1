@@ -1,4 +1,4 @@
-import resume from '../../public/IMAGE/resume.pdf'
+const resume = 'public/IMAGE/resume.pdf'
 export const PERSONAL_INFO ={
     name : 'BIG BEARSS TECH SOLUTIONS',
     title : 'Full Stack Developer',
