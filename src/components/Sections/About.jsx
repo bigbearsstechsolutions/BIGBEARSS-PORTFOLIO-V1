@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Download, Code2, Sparkles, icons } from 'lucide-react'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb } from 'react-icons/si'
 import { PERSONAL_INFO, ABOUT_STATS } from '../../utilis/constants'
-import Fadein from '../animations/Fadedin'
+import Fadein from '../animations/Fadein'
 import RadialBg from '../background/RadialBg'
 
 const About = () => {

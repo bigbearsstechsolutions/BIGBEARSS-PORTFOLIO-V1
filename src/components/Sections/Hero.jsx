@@ -3,7 +3,7 @@ import { ChevronDown, Star } from 'lucide-react'
 import { SiReact, SiTailwindcss, SiNextdotjs, SiNodedotjs, SiMongodb } from 'react-icons/si'
 import { PERSONAL_INFO, STATS } from '../../utilis/constants'
 import { scrollToSection } from '../../hooks/useSrollspy'
-import Fadein from '../animations/Fadedin'
+import Fadein from '../animations/Fadein'
 const img = 'public/IMAGE/videos.mp4'
 import RadialBg from '../background/RadialBg'
 

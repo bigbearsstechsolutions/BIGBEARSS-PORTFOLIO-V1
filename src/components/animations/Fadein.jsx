@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const Fadedin = ({children, delay=0, duration=500, threshold=0.1}) => {
+const Fadein = ({children, delay=0, duration=500, threshold=0.1}) => {
   const [isvisbile, setIsvisible] = useState(false)
   const elementRef = useRef(null);
 
@@ -26,7 +26,7 @@ const Fadedin = ({children, delay=0, duration=500, threshold=0.1}) => {
     }
   }, [threshold, isvisbile])
   return <div ref={elementRef}
-  className={isvisbile ? 'animate-fadeIn' : 'opacity-0'}
+  className={isvisbile ? 'animate-Fadein' : 'opacity-0'}
   style={{
     animationDelay : isvisbile ? `${delay}ms` : '0ms', animationDuration : `${duration}ms`,
     animationFillMode : 'both'
@@ -36,4 +36,4 @@ const Fadedin = ({children, delay=0, duration=500, threshold=0.1}) => {
   </div>
 }
 
-export default Fadedin
+export default Fadein

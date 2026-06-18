@@ -1,7 +1,7 @@
 import React from 'react'
 import { skills } from '../../data/skills';
 import * as Icons from 'lucide-react'
-import Fadein from '../animations/Fadedin'
+import Fadein from '../animations/Fadein'
 
 const Skills = () => {
 
