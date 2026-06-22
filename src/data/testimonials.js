@@ -1,57 +1,23 @@
-const img = '../../public/IMAGE/dev1.png'
+const imgt2 = '/public/test/img1.jpg'
+const imgt1 = '/public/test/img2.jpg'
 export const testimonials = [
     {
         id:1,
-        name : 'Sarha mitchell',
-        role : 'CTO',
-        company : 'TechStart Inc.',
-        image : '/IMAGE/img1.png',
-        quote : 'Outstanding work on our react applications .alex dlivered a high permoance',
+        name : 'Sajid Ali',
+        role : 'CEO',
+        company : 'Warsi food machinery',
+        image : imgt1,
+        quote: 'Outstanding work on our React application. The team delivered high performance and clean code.',
         rating : 5
     },
     {
         id:2,
-        name : 'Sarha mitchell',
-        role : 'CTO',
-        company : 'TechStart Inc.',
-        image : img,
-        quote : 'Outstanding work on our react applications .alex dlivered a high permoance',
+        name : 'Anas',
+        role : 'Director',
+        company : 'Anas Co.Lock',
+        image : imgt2,
+        quote : 'Honestly, I was not expecting much — but this completely blew me away. Best decision Ive made in a long time. Would recommend to literally everyone',
         rating :5 
     },
-    {
-        id:3,
-        name : 'Sarha mitchell',
-        role : 'CTO',
-        company : 'TechStart Inc.',
-        image : img,
-        quote : 'Outstanding work on our react applications .alex dlivered a high permoance',
-        rating :5
-    },
-    {
-        id:4,
-        name : 'Sarha mitchell',
-        role : 'CTO',
-        company : 'TechStart Inc.',
-        image : img,
-        quote : 'Outstanding work on our react applications .alex dlivered a high permoance',
-        rating :5
-    },
-    {
-        id:5,
-        name : 'Sarha mitchell',
-        role : 'CTO',
-        company : 'TechStart Inc.',
-        image : img,
-        quote : 'Outstanding work on our react applications .alex dlivered a high permoance',
-        rating : 5
-    },
-    {
-        id:6,
-        name : 'Sarha mitchell',
-        role : 'CTO',
-        company : 'TechStart Inc.',
-        image : img,
-        quote : 'Outstanding work on our react applications .alex dlivered a high permoance',
-        rating : 5
-    },
+   
 ]

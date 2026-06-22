@@ -1,4 +1,4 @@
-const resume = 'public/IMAGE/resume.pdf'
+const resume = '/IMAGE/resume.pdf'
 export const PERSONAL_INFO ={
     name : 'BIG BEARSS TECH SOLUTIONS',
     title : 'Full Stack Developer',
@@ -14,10 +14,10 @@ export const PERSONAL_INFO ={
 };
 
 export const SOCIAL_LINKS = {
-    github : 'github.com',
-    linkedln : 'linkdln.com',
-    twitter : 'twitter.com',
-    deibble : 'dribble.com',
+    github : 'github.https://github.com/bigbearsstechsolutions',
+    linkedln : 'https://www.linkedin.com/in/big-bearss-tech-s-251b78404?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    twitter : 'https://x.com/Bigbearsstech',
+    deibbble : 'dribbble.com',
 }
 
 export const STATS = [

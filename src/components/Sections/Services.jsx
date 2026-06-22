@@ -54,7 +54,7 @@ const Serivces = () => {
                     {service.title}
                   </h3>
                   <p className='text-white/60 leading-relaxed'>
-                    {service.discription}
+                    {service.description}
                   </p>
                 </div>
                 <div className='absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-3xl transition-all duration-300 pointer-events-none' />
@@ -80,7 +80,7 @@ const Serivces = () => {
                     {service.title}
                   </h3>
                   <p className='text-sm text-white/60 leading-relaxed line-clamp-3 '>
-                    {service.discription}
+                    {service.description}
                   </p>
                 </div>
                 <div className='absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-2xl transition-all duration-300 pointer-events-none '/>

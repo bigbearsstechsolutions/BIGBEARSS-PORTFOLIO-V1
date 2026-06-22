@@ -20,26 +20,56 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
+        console.log("FORM SUBMITED")
         e.preventDefault();
 
-        if (!formData.name || !formData.email || formData.message) {
+        if ( !formData.name || !formData.email || !formData.message) {
+                console.log('2. Validation failed - empty field')
+
             setStatus({
                 type: 'error', message: 'Please fill in all fields'
             })
+            return
         }
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            console.log('3. Validation failed - bad email')
 
-        const emailRogex = /^[^\s@]+@[^\s@]+\.[^\s@]+s/;
-        if (!emailRogex.test(formData.email)) {
             setStatus({
                 type: 'error', message: 'Please enter a valid email'
 
             })
             return
         }
-        setStatus({ type: 'success', message: 'Mssage sent successfully! I\'ll get back to you soon' })
-        setFormData({ name: '', email: '', message: '' });
+        console.log('4. Validation passed, calling fetch...')
 
+
+        try {
+            const respone = await fetch('http://localhost:5000/api/contact', {
+                method : 'POST',
+                headers : {'Content-Type' : 'application/json'},
+                body : JSON.stringify(formData)
+            })
+            console.log('5. Fetch completed, status:', respone.status)
+            const data = await respone.json();
+            console.log('6. Data received:', data)
+
+
+            if(data.success){
+            setStatus({ type: 'success', message: 'Mssage sent successfully! I\'ll get back to you soon' })
+            setFormData({ name: '', email: '', message: '' });
+            }else {
+            setStatus({ type: 'error', message: 'Something went wrong, please try again' })
+        }
+            
+        } catch (error) {
+           console.log('Error:', error)
+           console.log('7. CATCH - Error happened:', error)
+
+           setStatus({ type: 'error', message: 'Failed to send message. Please try again' })  
+        }
         setTimeout(() => setStatus({ type: '', message: '' }), 5000)
     }
 

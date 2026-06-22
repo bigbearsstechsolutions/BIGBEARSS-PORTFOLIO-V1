@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import {projects,categories} from '../../data/projects'
-import { Briefcase, Sparkles, Target, Globe, Palette, Zap, ChevronLeft, ChevronRight  } from 'lucide-react'
+import { Briefcase, Sparkles, Target, Globe, ShoppingCart, Cloud, Smartphone, Zap, ChevronLeft, ChevronRight } from 'lucide-react'
 import ProjectCard from '../ui/ProjectCard'
 import Fadein from '../animations/Fadein'
 
@@ -48,12 +48,13 @@ const Projects = () => {
   // ??categroy mapping 
 
   const categroyIcons = {
-    'All' : Target,
-    'web Apps' : Globe,
-    'UI Compnents': Palette,
-    'Full Stack' : Zap,
-    'CRM' : Palette,
-    'Automations' : Zap,
+    'All': Target,
+    'Business Website': Globe,
+    'E-Commerce': ShoppingCart,
+    'SaaS': Cloud,
+    'Application': Smartphone,
+    'Automation': Zap,
+    'CRM': Sparkles,
   }
   return (
     <section id='projects' className='relative py-20 bg-black overflow-hidden '>
