@@ -1,3 +1,4 @@
+const img = '../../public/IMAGE/dev1.png'
 export const testimonials = [
     {
         id:1,
